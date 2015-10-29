@@ -10,10 +10,14 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+    @IBOutlet weak var detailViewImage: UIImageView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+      detailViewImage.clipsToBounds = true
+        
     }
 
     override func didReceiveMemoryWarning() {

@@ -354,6 +354,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="detailViewImage" destination="6S2-xy-88u" id="qgt-6E-BGO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2cc-ij-AYE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
