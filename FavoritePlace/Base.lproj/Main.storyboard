@@ -22,8 +22,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <animations/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="zs5-9p-DL5">
-                                <rect key="frame" x="20" y="28" width="242" height="314"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="zs5-9p-DL5">
+                                <rect key="frame" x="20" y="28" width="242" height="304"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-2" translatesAutoresizingMaskIntoConstraints="NO" id="UHU-v5-T8m">
                                         <rect key="frame" x="0.0" y="0.0" width="95.5" height="57.5"/>
@@ -53,7 +53,7 @@
                                         <animations/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="-10" translatesAutoresizingMaskIntoConstraints="NO" id="4mm-7c-AH3">
-                                        <rect key="frame" x="0.0" y="92.5" width="242" height="151.5"/>
+                                        <rect key="frame" x="0.0" y="87.5" width="242" height="151.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SAN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dxz-xn-Pjc">
                                                 <rect key="frame" x="0.0" y="0.0" width="124.5" height="72"/>
@@ -73,7 +73,7 @@
                                         <animations/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="rx0-CW-iYz">
-                                        <rect key="frame" x="0.0" y="279" width="154.5" height="35"/>
+                                        <rect key="frame" x="0.0" y="269" width="154.5" height="35"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compass" translatesAutoresizingMaskIntoConstraints="NO" id="jIX-6z-Zow">
                                                 <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
@@ -92,39 +92,69 @@
                                 </subviews>
                                 <animations/>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sXn-6e-HhZ">
-                                <rect key="frame" x="215" y="524" width="171" height="36"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="N7A-F3-dnz">
+                                <rect key="frame" x="214.5" y="473" width="171" height="87"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sXn-6e-HhZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="171" height="36"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="OMh-eo-3OS"/>
+                                            <constraint firstAttribute="width" constant="171" id="z8h-tw-uat"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                        <state key="normal" title="ABOUT SAN DIEGO">
+                                            <color key="titleColor" red="1" green="1" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="ELl-Yc-aTC" kind="show" id="C7J-XA-nth"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tPo-WE-ixj">
+                                        <rect key="frame" x="0.0" y="51" width="171" height="36"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="5ua-JL-c0g"/>
+                                            <constraint firstAttribute="width" constant="171" id="WgV-AI-WaG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                        <state key="normal" title="PHOTOS">
+                                            <color key="titleColor" red="1" green="1" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="UG6-mT-Yc0" kind="show" id="NCD-1D-Zkg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <animations/>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="OMh-eo-3OS"/>
-                                    <constraint firstAttribute="width" constant="171" id="z8h-tw-uat"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                <state key="normal" title="FIND OUT MORE">
-                                    <color key="titleColor" red="1" green="1" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="ELl-Yc-aTC" kind="show" id="C7J-XA-nth"/>
-                                </connections>
-                            </button>
+                            </stackView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="zs5-9p-DL5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="1aW-Il-uLV"/>
                             <constraint firstItem="nHQ-3k-FXV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ChY-1M-JsA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="N7A-F3-dnz" secondAttribute="bottom" constant="40" id="EwN-Up-wyO"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nHQ-3k-FXV" secondAttribute="bottom" id="Ffg-Zx-FAZ"/>
+                            <constraint firstItem="N7A-F3-dnz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GBY-oN-yfj"/>
                             <constraint firstItem="nHQ-3k-FXV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="THW-qF-gsD"/>
                             <constraint firstAttribute="trailing" secondItem="nHQ-3k-FXV" secondAttribute="trailing" id="VMo-zv-gMl"/>
-                            <constraint firstItem="sXn-6e-HhZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WNC-Bh-3Pd"/>
                             <constraint firstItem="zs5-9p-DL5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Y3h-om-9fH"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="sXn-6e-HhZ" secondAttribute="bottom" constant="40" id="hd9-qN-wzf"/>
+                            <constraint firstItem="N7A-F3-dnz" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="aHA-ba-LkF"/>
                             <constraint firstItem="zs5-9p-DL5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="lbU-Yi-21n"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="lbU-Yi-21n"/>
+                                <exclude reference="aHA-ba-LkF"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="GBY-oN-yfj"/>
+                                <include reference="aHA-ba-LkF"/>
                             </mask>
                         </variation>
                     </view>
@@ -148,12 +178,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="LaJollaCoveBeachSanDiegoCalifornia8" translatesAutoresizingMaskIntoConstraints="NO" id="6S2-xy-88u">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="152"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaJollaCoveBeachSanDiegoCalifornia8" translatesAutoresizingMaskIntoConstraints="NO" id="6S2-xy-88u">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="490"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="152" id="BbS-LU-Pmb"/>
-                                    <constraint firstAttribute="height" constant="73" id="IZ4-9b-cdb"/>
+                                    <constraint firstAttribute="height" constant="73" id="IZ4-9b-cdb">
+                                        <variation key="heightClass=compact" constant="65"/>
+                                    </constraint>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -183,72 +215,85 @@
                                 <color key="textColor" red="1" green="1" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="5Uq-1V-aCM">
-                                <rect key="frame" x="20" y="173" width="560" height="299"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="5Uq-1V-aCM">
+                                <rect key="frame" x="20" y="530" width="560" height="50"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="psP-5j-rNv">
-                                        <rect key="frame" x="0.0" y="0.0" width="560" height="41"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cXQ-W9-6Mc">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="10"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="POPULATION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zn7-85-nfE">
-                                                <rect key="frame" x="0.0" y="0.0" width="110" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DISCOVER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRG-QY-GD1">
+                                                <rect key="frame" x="0.0" y="0.0" width="88.5" height="0.0"/>
                                                 <animations/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="21" id="Coe-HH-lkL"/>
-                                                    <constraint firstAttribute="width" constant="160" id="Z5i-9y-uS9"/>
+                                                    <constraint firstAttribute="width" constant="160" id="IUj-QW-xM5"/>
+                                                    <constraint firstAttribute="height" constant="21" id="yWG-i1-CQM"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                                 <variation key="default">
                                                     <mask key="constraints">
-                                                        <exclude reference="Coe-HH-lkL"/>
-                                                        <exclude reference="Z5i-9y-uS9"/>
+                                                        <exclude reference="yWG-i1-CQM"/>
+                                                        <exclude reference="IUj-QW-xM5"/>
                                                     </mask>
                                                 </variation>
+                                                <variation key="heightClass=compact" ambiguous="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="60" height="21"/>
+                                                </variation>
                                                 <variation key="heightClass=compact-widthClass=compact" ambiguous="YES">
-                                                    <rect key="frame" x="0.0" y="0.0" width="110" height="11"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="60" height="21"/>
                                                 </variation>
                                                 <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
-                                                    <rect key="frame" x="0.0" y="0.0" width="110" height="31"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="60" height="70"/>
                                                 </variation>
                                                 <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
-                                                    <rect key="frame" x="0.0" y="0.0" width="110" height="40"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="60" height="21"/>
                                                 </variation>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="1,356,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nL3-YL-2Bj">
-                                                <rect key="frame" x="0.0" y="21" width="76" height="20"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kny-j6-dS3">
+                                                <rect key="frame" x="0.0" y="10" width="556" height="0.0"/>
                                                 <animations/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="21" id="Ftf-4N-D1H"/>
-                                                    <constraint firstAttribute="width" constant="160" id="wMG-Jz-ntc"/>
+                                                    <constraint firstAttribute="height" constant="21" id="TpJ-aK-eaM"/>
+                                                    <constraint firstAttribute="width" constant="160" id="yag-uD-dAk"/>
                                                 </constraints>
+                                                <string key="text">Welcome to San Diego, California's second largest city, where blue skies keep watch over 70 miles of majestic coastline and a gentle Mediterranean climate and friendly locals create a welcoming vibe all its own.</string>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                                 <variation key="default">
                                                     <mask key="constraints">
-                                                        <exclude reference="Ftf-4N-D1H"/>
-                                                        <exclude reference="wMG-Jz-ntc"/>
+                                                        <exclude reference="yag-uD-dAk"/>
+                                                        <exclude reference="TpJ-aK-eaM"/>
                                                     </mask>
                                                 </variation>
+                                                <variation key="heightClass=compact" ambiguous="YES">
+                                                    <rect key="frame" x="0.0" y="31" width="560" height="216"/>
+                                                </variation>
                                                 <variation key="heightClass=compact-widthClass=compact" ambiguous="YES">
-                                                    <rect key="frame" x="0.0" y="11" width="76" height="20"/>
+                                                    <rect key="frame" x="0.0" y="31" width="360" height="228"/>
                                                 </variation>
                                                 <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
-                                                    <rect key="frame" x="0.0" y="31" width="76" height="20"/>
+                                                    <rect key="frame" x="0.0" y="80" width="757" height="159"/>
                                                 </variation>
                                                 <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
-                                                    <rect key="frame" x="0.0" y="40" width="76" height="20"/>
+                                                    <rect key="frame" x="0.0" y="31" width="360" height="179"/>
                                                 </variation>
                                             </label>
                                         </subviews>
                                         <animations/>
+                                        <variation key="heightClass=compact" ambiguous="YES">
+                                            <rect key="frame" x="0.0" y="61" width="560" height="247"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                            <rect key="frame" x="0.0" y="379" width="360" height="209"/>
+                                        </variation>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="WSJ-J7-sWD">
-                                        <rect key="frame" x="0.0" y="51" width="560" height="249"/>
+                                        <rect key="frame" x="0.0" y="20" width="560" height="10"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="ABOUT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNF-75-gUW">
-                                                <rect key="frame" x="0.0" y="0.0" width="60" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABOUT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNF-75-gUW">
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="0.0"/>
                                                 <animations/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="21" id="V1b-gq-6pt"/>
@@ -263,6 +308,9 @@
                                                         <exclude reference="hDg-oE-p3T"/>
                                                     </mask>
                                                 </variation>
+                                                <variation key="heightClass=compact" ambiguous="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="60" height="21"/>
+                                                </variation>
                                                 <variation key="heightClass=compact-widthClass=compact" ambiguous="YES">
                                                     <rect key="frame" x="0.0" y="0.0" width="60" height="21"/>
                                                 </variation>
@@ -270,25 +318,28 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="60" height="70"/>
                                                 </variation>
                                                 <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
-                                                    <rect key="frame" x="0.0" y="0.0" width="60" height="191"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="60" height="21"/>
                                                 </variation>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iqw-sD-1M1">
-                                                <rect key="frame" x="0.0" y="31" width="560" height="218"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iqw-sD-1M1">
+                                                <rect key="frame" x="0.0" y="10" width="560" height="0.0"/>
                                                 <animations/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="160" id="O8s-OU-3LA"/>
                                                     <constraint firstAttribute="height" constant="21" id="ytn-6u-rmm"/>
                                                 </constraints>
-                                                <mutableString key="text">San Diego is a city on the Pacific coast of California known for its beaches, parks and warm climate. Immense Balboa Park is the site of the world-famous San Diego Zoo, as well as numerous art galleries, artist studios, museums and gardens. A deep harbor is home to a large active naval fleet, with the USS Midway, an aircraft-carrier-turned-museum, open to the public. San Diego is the eighth-largest city in the United States and second-largest in California. San Diego is the birthplace of California and is known for its mild year-round climate, natural deep-water harbor, extensive beaches, long association with the U.S. Navy, and recent emergence as a healthcare and biotechnology development center.</mutableString>
+                                                <string key="text">San Diego is a city on the Pacific coast of California known for its beaches, parks and warm climate. Immense Balboa Park is the site of the world-famous San Diego Zoo, as well as numerous art galleries, artist studios, museums and gardens. A deep harbor is home to a large active naval fleet, with the USS Midway, an aircraft-carrier-turned-museum, open to the public.</string>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                                 <variation key="default">
                                                     <mask key="constraints">
-                                                        <exclude reference="ytn-6u-rmm"/>
                                                         <exclude reference="O8s-OU-3LA"/>
+                                                        <exclude reference="ytn-6u-rmm"/>
                                                     </mask>
+                                                </variation>
+                                                <variation key="heightClass=compact" ambiguous="YES">
+                                                    <rect key="frame" x="0.0" y="31" width="560" height="216"/>
                                                 </variation>
                                                 <variation key="heightClass=compact-widthClass=compact" ambiguous="YES">
                                                     <rect key="frame" x="0.0" y="31" width="360" height="228"/>
@@ -297,11 +348,88 @@
                                                     <rect key="frame" x="0.0" y="80" width="757" height="159"/>
                                                 </variation>
                                                 <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
-                                                    <rect key="frame" x="0.0" y="201" width="360" height="317"/>
+                                                    <rect key="frame" x="0.0" y="31" width="360" height="179"/>
                                                 </variation>
                                             </label>
                                         </subviews>
                                         <animations/>
+                                        <variation key="heightClass=compact" ambiguous="YES">
+                                            <rect key="frame" x="0.0" y="61" width="560" height="247"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                            <rect key="frame" x="0.0" y="379" width="360" height="209"/>
+                                        </variation>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="psP-5j-rNv">
+                                        <rect key="frame" x="0.0" y="40" width="560" height="10"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THINGS TO DO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zn7-85-nfE">
+                                                <rect key="frame" x="0.0" y="0.0" width="123.5" height="0.0"/>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="Coe-HH-lkL"/>
+                                                    <constraint firstAttribute="width" constant="160" id="Z5i-9y-uS9"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="Coe-HH-lkL"/>
+                                                        <exclude reference="Z5i-9y-uS9"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=compact" ambiguous="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="110" height="21"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=compact" ambiguous="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="110" height="11"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="110" height="31"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="110" height="339"/>
+                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nL3-YL-2Bj">
+                                                <rect key="frame" x="0.0" y="10" width="560" height="0.0"/>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="Ftf-4N-D1H"/>
+                                                    <constraint firstAttribute="width" constant="160" id="wMG-Jz-ntc"/>
+                                                </constraints>
+                                                <string key="text">San Diego offers every kind of activity imaginable; from world-renowned attractions, unlimited outdoor recreation, a thriving arts and culture community, sightseeing tours and award-winning restaurants, you're sure to find a host of things to entertain and inspire.</string>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="Ftf-4N-D1H"/>
+                                                        <exclude reference="wMG-Jz-ntc"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=compact" ambiguous="YES">
+                                                    <rect key="frame" x="0.0" y="31" width="76" height="20"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=compact" ambiguous="YES">
+                                                    <rect key="frame" x="0.0" y="11" width="76" height="20"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
+                                                    <rect key="frame" x="0.0" y="31" width="76" height="20"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="349" width="76" height="20"/>
+                                                </variation>
+                                            </label>
+                                        </subviews>
+                                        <animations/>
+                                        <variation key="heightClass=compact" ambiguous="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="560" height="51"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="360" height="369"/>
+                                        </variation>
                                     </stackView>
                                 </subviews>
                                 <animations/>
@@ -321,7 +449,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="4eV-7D-bs8" firstAttribute="top" secondItem="5Uq-1V-aCM" secondAttribute="bottom" constant="20" id="6qN-5J-29u"/>
-                            <constraint firstItem="cma-X0-DAB" firstAttribute="top" secondItem="Slj-5p-STH" secondAttribute="bottom" constant="20" id="AsP-3o-Zrd"/>
+                            <constraint firstItem="cma-X0-DAB" firstAttribute="top" secondItem="Slj-5p-STH" secondAttribute="bottom" constant="20" id="AsP-3o-Zrd">
+                                <variation key="heightClass=compact" constant="10"/>
+                            </constraint>
                             <constraint firstItem="4eV-7D-bs8" firstAttribute="top" secondItem="5Uq-1V-aCM" secondAttribute="bottom" constant="20" id="GpY-hc-m7x"/>
                             <constraint firstItem="5Uq-1V-aCM" firstAttribute="top" secondItem="6S2-xy-88u" secondAttribute="bottom" constant="8" id="Gpr-0k-BGN"/>
                             <constraint firstItem="5Uq-1V-aCM" firstAttribute="top" secondItem="6S2-xy-88u" secondAttribute="bottom" constant="40" id="Ht2-gf-YGg"/>
@@ -362,10 +492,116 @@
             </objects>
             <point key="canvasLocation" x="977" y="303"/>
         </scene>
+        <!--Photos View Controller-->
+        <scene sceneID="p7g-Rt-HIt">
+            <objects>
+                <viewController title="Photos View Controller" id="UG6-mT-Yc0" customClass="PhotosViewController" customModule="FavoritePlace" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hyk-Lj-oFV"/>
+                        <viewControllerLayoutGuide type="bottom" id="qHy-lh-VHP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="15Q-F3-c4V">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="t8F-t3-pCf">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Mfb-Qv-LsF">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_20140903_133325979" translatesAutoresizingMaskIntoConstraints="NO" id="qbm-rI-io3">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
+                                                <animations/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SanDiego3" translatesAutoresizingMaskIntoConstraints="NO" id="QNX-H4-L12">
+                                                <rect key="frame" x="301" y="0.0" width="300" height="200"/>
+                                                <animations/>
+                                            </imageView>
+                                        </subviews>
+                                        <animations/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="5pu-NQ-DAO">
+                                        <rect key="frame" x="0.0" y="201" width="600" height="199"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bigstock-San-Diego-at-night-7216098" translatesAutoresizingMaskIntoConstraints="NO" id="xfG-xK-gin">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="199"/>
+                                                <animations/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_20140903_133505571" translatesAutoresizingMaskIntoConstraints="NO" id="YqH-7g-Td9">
+                                                <rect key="frame" x="301" y="0.0" width="300" height="199"/>
+                                                <animations/>
+                                            </imageView>
+                                        </subviews>
+                                        <animations/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="rdG-Sf-qrX">
+                                        <rect key="frame" x="0.0" y="401" width="600" height="200"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="La_Jolla_Cove_view" translatesAutoresizingMaskIntoConstraints="NO" id="LGl-bi-ylZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
+                                                <animations/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6873995-Beach_and_cliff_edge_at_Torrey_Pines_San_Diego" translatesAutoresizingMaskIntoConstraints="NO" id="gW9-JN-QF5">
+                                                <rect key="frame" x="301" y="0.0" width="300" height="200"/>
+                                                <animations/>
+                                            </imageView>
+                                        </subviews>
+                                        <animations/>
+                                    </stackView>
+                                </subviews>
+                                <animations/>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kNt-6y-dxH">
+                                <rect key="frame" x="20" y="20" width="34" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="KO2-yS-UW9"/>
+                                    <constraint firstAttribute="width" constant="34" id="LYz-N9-uzp"/>
+                                </constraints>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="1" green="1" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="BackBtnPressed:" destination="ELl-Yc-aTC" eventType="touchUpInside" id="bXA-nw-FHU"/>
+                                    <action selector="backBtnPressed:" destination="UG6-mT-Yc0" eventType="touchUpInside" id="9HR-g7-jn8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="t8F-t3-pCf" secondAttribute="trailing" id="0ch-xi-pZP"/>
+                            <constraint firstItem="kNt-6y-dxH" firstAttribute="leading" secondItem="15Q-F3-c4V" secondAttribute="leadingMargin" id="JcN-K4-GLT"/>
+                            <constraint firstItem="qHy-lh-VHP" firstAttribute="top" secondItem="t8F-t3-pCf" secondAttribute="bottom" id="LCA-nC-aPT"/>
+                            <constraint firstItem="t8F-t3-pCf" firstAttribute="top" secondItem="15Q-F3-c4V" secondAttribute="top" id="gKU-1K-3It"/>
+                            <constraint firstItem="kNt-6y-dxH" firstAttribute="top" secondItem="Hyk-Lj-oFV" secondAttribute="bottom" id="kYy-yd-Xyj"/>
+                            <constraint firstItem="t8F-t3-pCf" firstAttribute="leading" secondItem="15Q-F3-c4V" secondAttribute="leading" id="kta-D4-xGG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomLeftImage" destination="LGl-bi-ylZ" id="Ing-l4-3Ub"/>
+                        <outlet property="bottomRightImage" destination="gW9-JN-QF5" id="Eud-Yk-2RD"/>
+                        <outlet property="middleLeftImage" destination="xfG-xK-gin" id="c6e-MK-jLB"/>
+                        <outlet property="middleRightImage" destination="YqH-7g-Td9" id="y3H-Oa-zIZ"/>
+                        <outlet property="topLeftImage" destination="qbm-rI-io3" id="6Zk-XN-bvE"/>
+                        <outlet property="topRightImage" destination="QNX-H4-L12" id="m33-mQ-l4A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jk7-6U-d7N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="977" y="1007"/>
+        </scene>
     </scenes>
     <resources>
         <image name="333995-svetik" width="3872" height="2582"/>
+        <image name="6873995-Beach_and_cliff_edge_at_Torrey_Pines_San_Diego" width="1600" height="1200"/>
+        <image name="IMG_20140903_133325979" width="4320" height="2432"/>
+        <image name="IMG_20140903_133505571" width="4320" height="2432"/>
         <image name="LaJollaCoveBeachSanDiegoCalifornia8" width="3840" height="2160"/>
+        <image name="La_Jolla_Cove_view" width="1920" height="1280"/>
+        <image name="SanDiego3" width="4147" height="2764"/>
+        <image name="bigstock-San-Diego-at-night-7216098" width="1600" height="1062"/>
         <image name="compass" width="35" height="35"/>
     </resources>
 </document>

@@ -13,6 +13,7 @@
 		8FE4E7C91BE16D0E00C3680F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FE4E7C81BE16D0E00C3680F /* Assets.xcassets */; };
 		8FE4E7CC1BE16D0E00C3680F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FE4E7CA1BE16D0E00C3680F /* LaunchScreen.storyboard */; };
 		8FE4E7D41BE27FE500C3680F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE4E7D31BE27FE500C3680F /* DetailViewController.swift */; };
+		8FE4E7F41BE3FDD700C3680F /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE4E7F31BE3FDD700C3680F /* PhotosViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		8FE4E7CB1BE16D0E00C3680F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8FE4E7CD1BE16D0E00C3680F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FE4E7D31BE27FE500C3680F /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		8FE4E7F31BE3FDD700C3680F /* PhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				8FE4E7CA1BE16D0E00C3680F /* LaunchScreen.storyboard */,
 				8FE4E7CD1BE16D0E00C3680F /* Info.plist */,
 				8FE4E7D31BE27FE500C3680F /* DetailViewController.swift */,
+				8FE4E7F31BE3FDD700C3680F /* PhotosViewController.swift */,
 			);
 			path = FavoritePlace;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FE4E7D41BE27FE500C3680F /* DetailViewController.swift in Sources */,
+				8FE4E7F41BE3FDD700C3680F /* PhotosViewController.swift in Sources */,
 				8FE4E7C41BE16D0E00C3680F /* ViewController.swift in Sources */,
 				8FE4E7C21BE16D0E00C3680F /* AppDelegate.swift in Sources */,
 			);
@@ -291,6 +295,7 @@
 				8FE4E7D21BE16D0E00C3680F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
